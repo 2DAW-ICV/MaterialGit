@@ -3,7 +3,7 @@
 
 ## 1. Git: Sistema de Control de Versions Distribuït
 
-**Git** és el sistema de control de versions (VCS) més utilitzat arreu del món i és essencial per a qualsevol desenvolupador.
+**Git** és el sistema de control de versions (VCS) més utilitzat arreu del món i és essencial per a qualsevol  persona que es dediqui al desenvolupament de software.
 
 ### 1.1 Conceptes Fonamentals de Git
 
@@ -11,7 +11,7 @@
 *   **Historial i Versions:** Git permet mantenir un historial complet de tot el codi desenvolupat. Cada canvi confirmat (commit) és com una **fotografia o instantània** de l'estat del projecte en un moment exacte del temps.
 *   **Avantatges:** Permet emmagatzemar codi, facilita el treball en equip, permet fer *rollbacks* (tornar a versions anteriors sense errors), i ajuda a saber exactament quin *commit* va introduir un error concret.
 
-### 1.2 El Flux de Treball (The Three Areas)
+### 1.2 El Flux de Treball
 
 El flux de treball de Git es basa en tres àrees principals en l'entorn local:
 
@@ -50,7 +50,7 @@ Les branques (Branches) permeten als desenvolupadors prendre una bifurcació de 
 | `git branch` | Llista les branques locals. | |
 | `git checkout <branca>` | Canvia a una branca existent. | |
 | `git checkout -b <nova_branca>` | Crea una nova branca i s'hi canvia immediatament (p. ex., per crear la branca `dev`). | |
-| `git switch <branca>` | Comanda moderna per canviar de branca, recomanada. | |
+| `git switch <branca>` | Comanda moderna per canviar de branca, recomanada. (version>=2.23) | |
 | `git merge <branca_origen>` | Fusiona els canvis de la branca d'origen a la branca actual (destí). | |
 | `git branch -d <branca>` | Elimina una branca local després que s'hagi fusionat. | |
 
@@ -64,6 +64,7 @@ Les branques (Branches) permeten als desenvolupadors prendre una bifurcació de 
 
 *   **Connexió SSH:** Per autenticar la màquina local amb GitHub de forma segura, es recomana l'ús de claus SSH (Secure Shell Protocol). La clau pública generada localment (`.pub`) ha de ser afegida a la configuració del perfil de GitHub.
     *   Comanda per generar la clau: `ssh-keygen -t ed25519 -C "your_email@example.com"` (exemple).
+    *   [+info](https://docs.github.com/en/authentication/connecting-to-github-with-ssh/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent)
 *   **Enllaçament Remot:** Per indicar al repositori local on es troba el repositori remot:
     *   `git remote add origin <URL>`: Associa el repositori local amb la URL remota sota l'àlies `origin`.
 *   **Clonació:** Per descarregar un repositori existent des de GitHub a l'entorn local:
@@ -93,9 +94,9 @@ El treball col·laboratiu es basa en la filosofia de GitHub Flow, centrat en la 
 
 ### 2.3 Gestió de Fitxers de Documentació (Markdown)
 
-La majoria de documentació a GitHub es realitza utilitzant **Markdown (.md)**.
+La majoria de documentació de Git es realitza utilitzant **Markdown (.md)**.
 
 *   **Sintaxi Markdown:** És una sintaxi senzilla per escriure text enriquit (negreta, cursiva, llistes, títols) utilitzant caràcters especials.
-*   **Fitxer `README.md`:** És el document que es mostra per defecte a la pàgina principal de qualsevol repositori. La importància de documentar amb *READMEs* és alta.
+*   **Fitxer `README.md`:** És el document que es mostra per defecte a la pàgina principal de qualsevol repositori. És important documentar amb *READMEs* els repositoris.
 
 ---

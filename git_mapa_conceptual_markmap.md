@@ -3,7 +3,7 @@
 ## Definició i Propòsit
 - Sistema de control de versions (VCS)
 - Controlar canvis
-- Facilitar el treball col·laboratiu en programari OSS i projectes privats
+- Facilitar el treball col·laboratiu en programari OpenSource i projectes privats
 - Creat per Linus Torvalds (creador del Kernel de Linux)
 
 ## Concepte Clau
@@ -13,7 +13,7 @@
 - Repositoris locals i remots
 - Branch (Branca): línia de desenvolupament alternativa
 - Commit: Punt concret en el temps amb informació i canvis
-- Checkout: Passar a un punt de treball independent (ex. Main → Feature)
+- [Checkout / Switch](https://kodekloud.com/blog/git-switch-vs-checkout/): Passar a un punt de treball independent (legacy vs v2.23)
 - Merge: Unió de canvis entre branques
 - Stash: Guardar canvis per recuperar-los més tard
 - HEAD: Punt actual al qual es troba el repositori
@@ -51,8 +51,9 @@
 
 ### Branching i Merges
 - `git branch` (llista de branques)
-- `git branch nom_branxa` (crear nova branca)
-- `git checkout nom_branxa` (canviar a branca)
+- `git branch nom_branca` (crear nova branca)
+- `git checkout nom_branca` (canviar a branca)
+- `git switch nom_branca` (canviar a branca versio>=2.23)
 - `git merge branca` (fusionar branca a l’actual)
 - `git branch -d branca` (eliminar branca)
 
@@ -84,14 +85,16 @@
 
 ## Eines de Treball Grupal
 - Pull Request (GitHub/GitLab)
-- Fork i contribució a projectes OSS
+- Fork i contribució a projectes OpenSource
 - Revisió de codi i comentaris
 - Issues de coordinació
 - Automatització amb CI/CD
 
-## Recursos d’Aprenentatge
-- GitHub Learning Lab
-- GitHub CLI i GitHub Desktop
-- GitHub Codespaces
-- GitHub Pages
-- Llibre: Pro Git (Scott Chacon i Ben Straub)
+## Recursos
+- [Repositori MoureDev Hello-git](https://github.com/mouredev/hello-git)
+- [Repositori ITB Curs Git i GitHub](https://github.com/git-github-curs-xtec/curs-git-i-github/tree/main/Material%20Docent)
+- [Llibre: Pro Git (Scott Chacon i Ben Straub)](https://git-scm.com/book/en/v2)
+- [GitHub Learning Lab](https://github.com/apps/github-learning-lab)
+- [GitHub Codespaces](https://docs.github.com/en/codespaces)
+- [GitHub Pages](https://docs.github.com/en/pages)
+
